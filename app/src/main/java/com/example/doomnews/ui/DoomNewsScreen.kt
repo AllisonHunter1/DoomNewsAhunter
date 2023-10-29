@@ -28,6 +28,7 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.material3.TopAppBar
+import androidx.compose.material3.windowsizeclass.WindowWidthSizeClass
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
@@ -47,7 +48,7 @@ import com.example.doomnews.model.NewsArticle
 import com.example.doomnews.ui.theme.DoomNewsTheme
 
 @Composable
-fun DoomNewsApp() {
+fun DoomNewsApp( windowSize: WindowWidthSizeClass) {
     val viewModel: DoomNewsViewModel = viewModel()
     val uiState by viewModel.uiState.collectAsState()
 
@@ -61,9 +62,23 @@ fun DoomNewsApp() {
             )
         }
     ) { innerPadding ->
-        // TODO: Add simple navigation with if/else conditional to show details
-        // TODO: Add navigation to go to Feed page and List and Details page
+        val viewModel: DoomNewsViewModel = viewModel()
+        val uiState by viewModel.uiState.collectAsState()
 
+        when (windowSize) {
+            WindowWidthSizeClass.Compact -> {
+
+            }
+            WindowWidthSizeClass.Medium -> {
+
+            }
+            WindowWidthSizeClass.Expanded -> {
+
+            }
+            else -> {
+
+            }
+        }
         DoomNewsList(
             articles = uiState.articlesList,
             onClick = {
