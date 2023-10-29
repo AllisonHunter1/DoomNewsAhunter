@@ -8,6 +8,7 @@ import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.PaddingValues
+import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
@@ -46,6 +47,7 @@ import com.example.doomnews.R
 import com.example.doomnews.data.DataSource
 import com.example.doomnews.model.NewsArticle
 import com.example.doomnews.ui.theme.DoomNewsTheme
+import com.example.doomnews.ui.utils.DoomNewsContentType
 
 @Composable
 fun DoomNewsApp( windowSize: WindowWidthSizeClass) {
@@ -64,16 +66,19 @@ fun DoomNewsApp( windowSize: WindowWidthSizeClass) {
     ) { innerPadding ->
         val viewModel: DoomNewsViewModel = viewModel()
         val uiState by viewModel.uiState.collectAsState()
-
+        val contentType: DoomNewsContentType
+        if (contentType == DoomNewsContentType.LIST_AND_DETAIL) {
+        } else {
+        }
         when (windowSize) {
             WindowWidthSizeClass.Compact -> {
-
+                contentType = DoomNewsContentType.LIST_ONLY
             }
             WindowWidthSizeClass.Medium -> {
-
+                contentType = DoomNewsContentType.LIST_ONLY
             }
             WindowWidthSizeClass.Expanded -> {
-
+                contentType = DoomNewsContentType.LIST_AND_DETAIL
             }
             else -> {
 
@@ -234,6 +239,28 @@ private fun DoomNewsDetail(
 // TODO: Add DoomNewsFeed() composable
 
 // TODO: Add DoomNewsListAndDetails() composable
+
+@Composable
+fun  DoomNewsListAndDetails(
+    modifier: Modifier = Modifier,
+    articles: List<NewsArticle>,
+    onClick: (NewsArticle) -> Unit,
+    selectedArticle: NewsArticle,
+    contentPadding: PaddingValues,
+) {
+    Row(modifier = modifier) {
+      DoomNewsList(
+          modifier = Modifier.weight(2f),
+          articles = articles
+          , onClick = onClick
+      )
+        DoomNewsDetail(selectedArticle = selectedArticle
+            , onBackPressed = { /*TODO*/ },
+            contentPadding = contentPadding,
+                    modifier = Modifier.weight(2f)
+        )
+    }
+}
 
 @Composable
 private fun DoomNewsImage(
