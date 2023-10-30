@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Doom News</string>
     <string name="back_button">Back</string>
-    <string name="author_line">%s • %s</string>
+    <string name="author_line" formatted="false">%s • %s</string>
     <string name="author_one">(GNN) Global News Network</string>
     <string name="author_two">(NIJ) National Insight Journal</string>
     <string name="author_three">(STC) Science and Technology Chronicle</string>
@@ -190,5 +190,74 @@
         incident serves as a sobering reminder that, in an increasingly interconnected world, the
         security of vital systems remains paramount for national security and the well-being of
         citizens.
+    </string>
+    <string name="headline_seven">Scientists Make Breakthrough in Renewable Energy, Paving the Way for a Greener Future</string>
+    <string name="headline_eight">Astronomers Discover New Exoplanet with Conditions Potentially Suitable for Human Colonization</string>
+    <string name="headline_nine">AI-Powered Robot Helps Perform Complex Surgery with Unprecedented Precision</string>
+    <string name="headline_ten">Environmentalists Rally for Conservation Efforts to Protect Endangered Species</string>
+    <string name="headline_eleven">New Study Reveals Surprising Benefits of Meditation for Mental and Physical Health</string>
+    <string name="headline_twelve">Tech Giants Announce Breakthroughs in Quantum Computing Research</string>
+
+    <string name="author_seven">(REN) Renewable Energy News</string>
+    <string name="author_eight">(ASA) Astronomy and Space News</string>
+    <string name="author_nine">(MED) Medical Innovation Digest</string>
+    <string name="author_ten">(ENC) Environmental Conservation Chronicle</string>
+    <string name="author_eleven">(HMH) Health Matters Hub</string>
+    <string name="author_twelve">(QCR) Quantum Computing Report</string>
+
+    <string name="article_seven">
+        In a significant development for renewable energy, scientists have achieved a major breakthrough
+        in harnessing clean and sustainable power sources. Researchers at leading energy institutes
+        around the world have collaborated to develop a groundbreaking technology that promises to
+        revolutionize the way we generate electricity.
+        \n\n
+        The new technology, known as "SolarWave," utilizes advanced materials and innovative solar
+        panel designs to capture sunlight more efficiently than ever before. This breakthrough could
+        make solar power more accessible and affordable for households and businesses, reducing our
+        reliance on fossil fuels and mitigating the impacts of climate change.
+        \n\n
+        Experts believe that SolarWave has the potential to transform the global energy landscape,
+        offering a brighter and cleaner future for generations to come. Environmentalists and
+        policymakers are optimistic about the positive impact this innovation will have on the fight
+        against climate change.
+    </string>
+
+<string name="article_eight">
+    I made a lot of money, I made 250 thousand from a book, and from the serial rights which many of you were good enought to purchase also.
+</string>
+
+    <string name="article_nine">
+        In a remarkable display of medical innovation, an AI-powered surgical robot has successfully
+        performed a complex surgery with unparalleled precision. The groundbreaking procedure, which
+        involved delicate microsurgery, was completed without any complications, raising the bar for
+        medical robotics.
+        Surgeons and scientists alike are excited about the potential of AI-assisted surgery to
+        enhance patient outcomes and reduce the risks associated with complex procedures. The
+        successful operation marks a significant milestone in the field of medical robotics and
+        artificial intelligence.
+        As this technology continues to evolve, it holds the promise of improving healthcare
+        worldwide and providing patients with safer and more effective treatment options.
+    </string>
+
+    <string name="article_ten">
+       In the practice of law, and Im not claiming I was worth it, but apparently former vice presidents, or presidents make a lot of money, and I did work pretty hard.
+    </string>
+
+    <string name="article_eleven">
+        A recent study has unveiled the myriad benefits of meditation for both mental and physical
+        health. Researchers have found that regular meditation practice can reduce stress, improve
+        cognitive function, and enhance overall well-being.
+        The studies findings suggest that meditation may play a crucial role in promoting mental
+        health and resilience, especially in our fast-paced and stressful world. As more people
+        discover the transformative power of meditation, it is gaining recognition as a valuable tool
+        for maintaining a healthy mind and body.
+        Whether through mindfulness meditation or other techniques, the practice of meditation is
+        helping individuals find inner peace and balance in their lives.
+    </string>
+
+    <string name="article_twelve">
+    Leading tech giants have announced significant breakthroughs in quantum computing research,
+    bringing us closer to a new era of computing power. Quantum computers have the potential to
+    solve complex problems that were previously unsolvable, revolutionizing industries from
     </string>
 </resources>

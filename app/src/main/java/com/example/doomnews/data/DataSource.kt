@@ -47,5 +47,47 @@ object DataSource {
             imageResourceId = R.drawable.cyber,
             lastUpdateTime = "42 mins ago"
         ),
+        NewsArticle(
+            headlineResourceId = R.string.headline_seven,
+            articleResourceId = R.string.article_seven,
+            authorResourceId = R.string.author_seven,
+            imageResourceId = R.drawable.scientists,
+            lastUpdateTime = "2 days ago"
+        ),
+        NewsArticle(
+            headlineResourceId = R.string.headline_eight,
+            articleResourceId = R.string.article_eight,
+            authorResourceId = R.string.author_eight,
+            imageResourceId = R.drawable.space,
+            lastUpdateTime = "1 week ago"
+        ),
+        NewsArticle(
+            headlineResourceId = R.string.headline_nine,
+            articleResourceId = R.string.article_nine,
+            authorResourceId = R.string.author_nine,
+            imageResourceId = R.drawable.robot,
+            lastUpdateTime = "4 hours ago"
+        ),
+        NewsArticle(
+            headlineResourceId = R.string.headline_ten,
+            articleResourceId = R.string.article_ten,
+            authorResourceId = R.string.author_ten,
+            imageResourceId = R.drawable.environment,
+            lastUpdateTime = "3 days ago"
+        ),
+        NewsArticle(
+            headlineResourceId = R.string.headline_eleven,
+            articleResourceId = R.string.article_eleven,
+            authorResourceId = R.string.author_eleven,
+            imageResourceId = R.drawable.health,
+            lastUpdateTime = "5 hours ago"
+        ),
+        NewsArticle(
+            headlineResourceId = R.string.headline_twelve,
+            articleResourceId = R.string.article_twelve,
+            authorResourceId = R.string.author_twelve,
+            imageResourceId = R.drawable.technology,
+            lastUpdateTime = "6 days ago"
+        )
     )
 }
